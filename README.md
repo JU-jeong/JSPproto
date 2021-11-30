@@ -94,4 +94,57 @@ ID / Password / Password Check / E-mail / Tel
 enumeration vs iterator
 
 범용성 전자가 모든 class 사용 가능
+                                                                       
+                                                                       
+                                                                       
+211130
+                                                                       
+                                                                       JSP 내장객체
+
+response 생각보다 할 내용이 많지 않음
+정보만 넘겨 웹브라우저의 요청에 대한 응답 정보를 저장하고 있는 객체
+
+addCookie
+
+sendRedirect
+
+쿠키와 세션에서 봐용
+
+아이디와 비밀번호가 둘 다 같아야 한다. 
+
+"ResponseMain.jsp?id = " + id 
+파라미터 축을 통해서 넘기든가?
+
+sendRedirect 들어가면 버퍼 내용이 삭제됨
+값을 받아서 해당 jsp파일로 넘어가자~
+
+getParameter(id)님 반갑습니다~
+
+-----------------------
+
+내장객체 out
+
+JSP 페이지의 출력할 내용을 가지고 있는 출력 스트림 객체. 
+
+화면 출력방법
+
+ExpressionLanguage
+
+Out
+
+SplitLit
+
+session.getAttribute -> Object 타입을
+
+String type으로 Casting
+
+-----------------------------------------
+
+include tag
+
+다른 페이지의 jsp 파일내용과 혼합
+
+jsp include - include action tag 다른 페이지의 실행 결과를 현재 페이지에 포함
+
+request.getParameter
 
