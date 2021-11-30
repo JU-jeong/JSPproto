@@ -7,12 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>슨</h1>
 	<%
-	for(int i = 2; i < 10; i++){
-		for(int j = 1; j < 10; j++){
-			out.write(i + " * " + j + " = " + i * j);
-			}
-		}
-	%>G
+		request.setCharacterEncoding("EUC-KR");
+		//post방식일떄는 안써도됨
+	%>
+		<h2> <%= request.getParameter("id"+"슨") %>님 반갑습니다</h2>
 </body>
 </html>

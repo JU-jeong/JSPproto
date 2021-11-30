@@ -8,11 +8,12 @@
 </head>
 <body>
 	<%
-	for(int i = 2; i < 10; i++){
-		for(int j = 1; j < 10; j++){
-			out.write(i + " * " + j + " = " + i * j);
-			}
-		}
-	%>G
+		String name = "알리미 어플";
+	%>
+	스크립트로 표현시 <%=name %> 이 화면에 출력
+	<p>
+	<%
+	out.println(name + "이 화면에 출력");
+	%>
 </body>
 </html>

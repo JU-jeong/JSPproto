@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h2>세션 네임 페이지 입니다.</h2>
+	
 	<%
-	for(int i = 2; i < 10; i++){
-		for(int j = 1; j < 10; j++){
-			out.write(i + " * " + j + " = " + i * j);
-			}
-		}
-	%>G
+		String name1 = (String)session.getAttribute("name1");
+	%>
+	<%=name1%> 님 반갑습니다.
+	
 </body>
 </html>
