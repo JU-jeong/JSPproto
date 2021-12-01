@@ -147,4 +147,59 @@ include tag
 jsp include - include action tag 다른 페이지의 실행 결과를 현재 페이지에 포함
 
 request.getParameter
+                        
+                        
+----------------------------------------
+                        
+211201
+                        
+                        JSP 페이지 액션 태그
+
+Include : 다른 페이지의 실행 결과를 현재 페이지에 포함시킬 때 사용
+<jsp:Include> 와 Include에 무슨 차이가 있는가
+
+Foward
+UseBean
+setProperty
+getPropery
+등이 있다.
+
+* jsp:Include는 parameter get으로 못넘김
+
+-----------------------------------------------------------------
+
+Foward : 마찬지로 흐름 제어
+response.SendRedirect는 단순한 페이지 간의 이동만 가능(데이터는 따로 옮겨줘야함)
+Foward는 데이터 같이 옮김 개꿀
+
+----------------------------------------------------------------
+
+UseBean : JSP와 DB의 연동을 용이하게
+
+자바빈을 JSP에서 사용
+
+값들 멤버변수 arrayList에 쳐넣고 가져다씀(자바빈즈)
+
+JSP가 톱이라면 Spring은 전기톱이다. 
+
+request.setCharacterEncoding("euc-kr")
+request.getParameter("")->회원정보가 100000개라면?
+100000개를 칠 것인가?
+
+useBean의 등장
+
+<jsp:useBean id = "mbean " class = "bean.MemberBean></jsp:useBean> //마치 객체생성과같다
+
+MemberBean mbean = new MemberBean()
+
+<jsp:setProperty name = "mbean" property = id>
+//id만 멤버변수안에들어감
+
+아이디를 받아보자
+<h2>당신의 아이디는 <jsp:getProperty property = "id" name = "mbean"/></h2>
+
+<%=mbean.getId() %>
+
+다다음주월요일 이클래스 공지에 뜸 수업시간
+그날 자정까지 제출 필수2문제 선택 1개
 
