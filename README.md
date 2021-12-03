@@ -203,3 +203,23 @@ MemberBean mbean = new MemberBean()
 다다음주월요일 이클래스 공지에 뜸 수업시간
 그날 자정까지 제출 필수2문제 선택 1개
 
+ ---------------------------------------------
+ 
+ 211203
+ 
+ www.oracle.com/technetwork/java/index.html
+
+TNS 1250 ->서비스->오라클 관련 
+
+www.toadworld.com/products/toad-for-oracle
+
+db 연동방법
+
+1. jsp 내부 연동
+
+2. jsp로 받아서 dao(data acess object) class로 넘기기
+-> 보통 이 패턴을 많이 씀
+
+3. conn pool
+ 
+generate getter and setter : alt s r
