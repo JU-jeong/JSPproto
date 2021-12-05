@@ -223,3 +223,21 @@ db 연동방법
 3. conn pool
  
 generate getter and setter : alt s r
+ 
+ 
+------------------------------------------------------------------
+ 
+ 211205
+ 
+ JSP의 스크립팅 요소
+
+scriptlet <% %>
+expression <%= %>
+declaration <%! %>
+
+
+scriptlet 안에 자바 코드 그대로 작성 가능 브라우저 실행 시 나타나는 것이 아닌 웹 서버 쪽에서 ㅗ학인
+expression 연산을 표현 가능
+declaration 변수나 메서드의 선언
+
+
