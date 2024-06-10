@@ -1,0 +1,119 @@
+package memory;
+
+public class JavaMemoryMain1 {
+    public static void main(String[] args) {
+        System.out.println("main start");
+        method1(m1:10);
+        System.out.println("main start");
+    }
+
+    static void method(int m1) {
+        System.out.println("method1 start");
+        int cal = m1 * 2;
+        method2(cal);
+        System.out.println("method1 end");
+    }
+
+    static void method2(int m2) {
+        System.out.println("method2 start");
+        System.out.println("method2 end");
+    }
+}
+
+public class Animal {
+    private String name;
+    private int size;
+
+    public Animal(String name, int size) {
+        this.name = name;
+        this.size = size;
+    }
+
+    public void sound(){
+        System.out.println("sound like:" + this.name);
+    }
+
+    @Override
+    public void toString(){
+        //실행부
+    }
+}
+
+package extends1.ex3;
+
+public class Car {
+    public void move() {
+        //실행부
+    }
+
+    public void openDoor() {
+        //실행부
+    }
+
+//////////////////////////////////
+
+package extends1.overriding;
+
+    public class GasCar extends Car {
+        //실행부
+    }
+
+////////////////////////////////
+
+package extends1.overriding;
+
+    public class ElectricCar extends Car {
+        //실행부
+
+
+    }
+
+    public static void main(String[] args) {
+        Animal animal = new Animal("동물", 0);
+        Dog dog = new Dog("멍멍이", 100);
+        Cat cat = new Cat("냐옹이", 50);
+
+        Box<Dog> dogBox = new Box<>();
+        dogBox.set(dog);
+        Dog findDog = dogBox.get();
+
+        Box<Cat> catBox = new Box<>();
+        catBox.set(cat);
+        Cat findCat  = catBox.get();
+    }
+
+///////////////////////////////////////////////////
+
+package generic.ex2;
+
+    public class Box<T> {
+        private T value;
+
+        public void set(T value) {
+            this.value = value;
+        }
+
+        public T get() {
+            return value;
+        }
+    }
+
+    public class IntegerBox {
+        private Integer value;
+
+        public void set(Integer value) {
+            this.value = value;
+        }
+
+        public Integer get() {
+            return value;
+        }
+    }
+
+    public class StringBox {
+        private String value;
+        set{this.value = value;}
+        get{return value;}
+    }
+
+
